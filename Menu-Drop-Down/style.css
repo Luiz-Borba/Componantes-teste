@@ -1,0 +1,40 @@
+:root {
+  --corFundo: blue;
+  --corPrimaria: rgb(104, 104, 223);
+  --corHover: rgb(255, 0, 0);
+}
+.dropDowMenu ul {
+  list-style: none;
+  padding: 0px;
+}
+.dropDowMenu ul {
+  background-color: var(--corFundo);
+
+}
+.dropDowMenu ul li {
+  display: inline;
+  position: relative;
+}
+.dropDowMenu ul li a {
+    color: var(--corPrimaria);
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+}
+.dropDowMenu ul li a:hover {
+   background-color: var(--corHover);
+   left: 0;
+}
+.dropDowMenu ul ul {
+    display: none;
+    position: absolute;
+    width: 50px;
+    left: 0;
+}
+.dropDowMenu ul li:hover ul {
+    display: block;
+    
+} 
+.dropDowMenu ul ul li a{
+    display: block;
+}
